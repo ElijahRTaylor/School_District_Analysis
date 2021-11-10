@@ -7,6 +7,8 @@ As a result of finding out that the reading and math grades from Thomas High Sch
 
 ## Results
 
+### District Sumarry
+
 How is the district summary affected?
 
 Once we updated our code and removed the values for the compromised 9th grader scores, it barely affects our district summary.  In our original district summary, we had the following results:
@@ -18,6 +20,7 @@ When we run our code with the clean data, oue results are almost identical to th
 
 ![Screen Shot 2021-11-07 at 1 48 35 AM](https://user-images.githubusercontent.com/87248687/140635380-b53c8b46-b859-4f7f-9168-42394cd54cd4.png)
 
+### Per School Summary
 
 How is the school summary affected?
 
@@ -52,6 +55,7 @@ THS_10_through_12=ths_tenth_grade_count+ths_eleventh_grade_count+ths_twelth_grad
 ![Screen Shot 2021-11-07 at 2 04 21 AM](https://user-images.githubusercontent.com/87248687/140635786-24206dab-92cf-4a2a-886d-a21d92e9130b.png)
 
 
+### Individual School's Metrics
 
 How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?
 
@@ -60,6 +64,7 @@ Before updating the student counts in the per school data frame, Thomas High Sch
 
 ![Screen Shot 2021-11-07 at 2 11 20 AM](https://user-images.githubusercontent.com/87248687/140635957-5cb4353e-8ef0-40ed-a9b5-ebd686e3e28c.png)
 
+### School Metrics By Grade
 
 How does replacing the ninth-grade scores affect the following:
 
@@ -88,7 +93,7 @@ The updated DataFrames include the NaN for the 9th grade reading and math scores
 
 
 
-Scores by school spending
+### Scores by school spending
 
 When it comes to the school spending summary, we have another scenario where we find that the NaN's did not substantially effect the output of our spending summary.  In both summaries, we can see that the schools that spent less per student tend to have a higer overall passing percentage.
 
@@ -97,7 +102,7 @@ When it comes to the school spending summary, we have another scenario where we 
 <img width="1112" alt="Screen Shot 2021-11-07 at 9 00 47 PM" src="https://user-images.githubusercontent.com/87248687/140673023-ab8f2576-ebe7-49f9-8753-a864e519804d.png">
 
 
-Scores by school size
+### Scores by school size
 
 When it comes to the school size summary, we also have another situation where the NaNs did not have a major effect on the output of the summary.  Since we did not replace the total count of students at Thomas High School inside of the per_school_summary_df, Thomas High School ends up being placed into the same school size bin that it was, when we originally did our analysis.  From the school size summary, we can see that the smaller sized and medium sized schools tend to have significantly high passing percentages than the larger schools.
 
@@ -109,7 +114,7 @@ When it comes to the school size summary, we also have another situation where t
 
 
 
-Scores by school type
+### Scores by school type
 
 
 When we create a summary of the student score metrics by school type (charter vs district), we once again see that the NaN in the 9th grader scores did not significantly change the summary, especially once we format the decimal places in the numbers.  The biggest thing we can gather from looking at this summary is that the charter schools had significantly higher passing percentages than the district schools.
